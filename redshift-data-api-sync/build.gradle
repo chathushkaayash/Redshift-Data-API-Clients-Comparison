@@ -1,0 +1,37 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.4.0'
+	id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	implementation 'io.projectreactor:reactor-core:3.5.0'
+
+	implementation platform("software.amazon.awssdk:bom:2.27.21")
+	implementation 'software.amazon.awssdk:redshift'
+	implementation 'software.amazon.awssdk:auth'
+	implementation 'software.amazon.awssdk:netty-nio-client'
+	implementation 'software.amazon.awssdk:redshiftdata'
+	implementation 'software.amazon.awssdk:regions'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
