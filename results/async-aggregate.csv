@@ -1,5 +1,5 @@
-Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
-Retrieve available users,42972,1,0,394,2.23,0.000%,732.44814,1559.31,174.53,2180.0
-Retrieve available users-0,42972,0,0,59,0.52,0.000%,732.77288,150.28,87.30,210.0
-Retrieve available users-1,42972,0,0,331,1.92,0.000%,733.23550,1410.62,87.36,1970.0
-TOTAL,128916,0,0,394,1.76,0.000%,2197.34442,3118.63,349.06,1453.3
+Label,# Samples,Average,Median,90% Line,95% Line,99% Line,Min,Max,Error %,Throughput,Received KB/sec,Sent KB/sec
+Retrieve available users,5328664,10,10,17,20,28,0,927,0.000%,4441.09367,9454.67,1058.23
+Retrieve available users-0,5328664,4,4,8,10,13,0,148,0.000%,4441.13808,910.78,529.12
+Retrieve available users-1,5328664,6,6,11,13,21,0,925,0.000%,4441.33427,8544.36,529.14
+TOTAL,15985992,7,6,13,16,24,0,927,0.000%,13323.28100,18909.34,2116.46

@@ -1,0 +1,5 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+Retrieve available users,5328664,10,0,927,7.20,0.000%,4441.09367,9454.67,1058.23,2180.0
+Retrieve available users-0,5328664,4,0,148,3.08,0.000%,4441.13808,910.78,529.12,210.0
+Retrieve available users-1,5328664,6,0,925,6.35,0.000%,4441.33427,8544.36,529.14,1970.0
+TOTAL,15985992,7,0,927,6.41,0.000%,13323.28100,18909.34,2116.46,1453.3
